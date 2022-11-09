@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap');
 
-
+/* Variaveis */
 :root{
     --branco: #fff;
     --primaria: #0052E0;
@@ -11,31 +11,38 @@
 
     --raleway: 'Raleway', sans-serif; 
     --shadow:  0px 4px 4px rgba(0, 0, 0, 0.25);}
+
+
 body{
     background-color: var(--background);
-    background-image: url(imagens/Screenshot_1.jpg);
-    background-repeat: no-repeat;
-    background-position: top center ;
     width: 100vw;}
 
 
+/* Navegador */
 
 nav{
-    background-color: var(--primaria);
+    background-color: var(--dark);
     position: absolute;
     width: 88%;
     height: 50px;
     left: 50%;
-    top: 88px;
+    top: 65px;
     border-radius: 22px;
     transform: translate(-50%, -50%);
-    box-shadow:var(--shadow);}
+    box-shadow: var(--shadow);}
 ul{
+    background-color: var(--dark);
+    box-shadow: var(--shadow);
+    border-radius: 22px;
+    width: 100%;
     display: flex;
+    border-style: solid;
     flex-direction: row;
     float: right;
-    padding: 1px 17.65px 1px 1px;
-    margin: 0px;}
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;}
 li{
     display: flex;}
 .toolbar:hover{
@@ -53,18 +60,33 @@ li{
     margin: 0px;    
     text-decoration: none;}
 
+/* Meio */
 
-
-main{
+main {
     font-family: var(--raleway);
+
+    display: inline-flex; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+    flex-direction: row;
+    row-gap: 59%;
+    
+    margin: 0;
+    padding: 0;
     position: absolute;
-    width: 87%;
-    height: 61%;
-    left: 6vw;
-    top: 154px;}
+    width: 100vw;
+    height: 62vh;
+    left: 0vw;
+    top: 20vh;}
+
 section{
-    position: relative;}
-h1{
+    position: relative;
+    margin: 0;
+    height: 100%;}
+.sobre {
+    transform: translate(0, 20%);}
+.sobre > h1{
     color: var(--secundaria);
     width: 10vw;
     display: block;
@@ -73,8 +95,8 @@ h1{
 
     margin: 15px 0px;
     padding: 0px 0px;}
-.saudacao{
-    background-color: var(--primaria);
+.sobre > .saudacao{
+    background-color: var(--dark);
     width: 120px;
     height: 20px;
     text-decoration: none;
@@ -88,45 +110,56 @@ h1{
     padding: 6px;
     row-gap: 10px;
     margin: 0px;}
-.saudacao> span{
+.sobre > .saudacao> span{
     color: var(--branco);
     font-weight: 600;}
-.saudacao:hover >.mao{
+.sobre > .saudacao:hover >.mao{
     transform: rotate(45deg);}
-.sobre{}
-.redes{
+.sobre > .redes{
     width: 130px;
     display: flex;
     justify-content: space-between;
     padding: 10px 10px;} 
 
-#imagem{
-    position: absolute;
-    width: 45%;
-    height: 100%;
-    right: 13%;
-    bottom: -2%;
-    transform: translate(0%, 0%);}
 
-.principal{
+.imagens > .principal{
     position: relative;
-    width: 78%;
-    height: 96%;
+    width: 76%;
+    top: 50%;
+    left: 10%;
+    transform: translate(0px, -50%);}
+.imagens > .illustrator{
+    width: 30%;
+    position: absolute;
+    right: 64%;
+    top: 64%;}
+.imagens > .css3{
+    width: 30%;
+    position: absolute;
+    left: 3%;
+    top: -6%;}
+.imagens > .figma{
+    width: 30%;
+    position: absolute;
+    bottom: -9%;
+    right: 9%;}
+.imagens > .html5{
+    width: 30%;
+    position: absolute;
+    top: 26%;
+    right: 0%;}
+.imagens > .photoshop{
+    width: 30%;
+    position: absolute;
+    top: -11%;
+    right: 12%;}
 
-    top: 3%;
-    left: 8%;}
 
-.illustrator{ position: absolute; right: 66%; top: 57%;}
-.css3{ position: absolute; left: -1%; top: 10%;}
-.figma{ position: absolute;bottom: -5%; right: 16%;}
-.html5{ position: absolute; top: 31%; right: 3%;}
-.photoshop{ position: absolute; top: -7%; right: 18%;}
-
+/* Rodapé */
 footer{
     position: absolute;
     bottom: 5%;
-    right: 18%;
-}
+    right: 18%;}
 .button{
     position: absolute;
     bottom: -9%;
@@ -134,5 +167,4 @@ footer{
     width: 137px;
     height: 29px;
     border-style: solid;
-    border-radius: 14px;
-}
+    border-radius: 14px;}
