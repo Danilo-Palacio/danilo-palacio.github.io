@@ -216,6 +216,29 @@ footer{
     text-decoration: none;
     font-weight: 500;}
 
+#informacao{
+    position: relative;
+    left: 5vw;
+    bottom: 0vh;
+    display: flex;
+    background-color: var(--secundaria);
+    width: 14vw;
+    height: 7vh;
+    color: var(--branco);
+    border-radius: 10px;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+#informacao > p{
+    margin: 0px;
+    padding: 0px;
+}
+#informacao > img{
+    margin: 0px;
+    padding: 0px;
+
+}
 div > .baixarcv{
     color: var(--secundaria);
     font-family: var(--raleway);
