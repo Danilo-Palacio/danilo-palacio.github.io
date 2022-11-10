@@ -7,9 +7,7 @@
     --secundaria: #001F54;
     --background: #BCE6E5;
     --dark: #0A1128;
-    
-
-    --raleway: 'Raleway', sans-serif; 
+    --raleway: Raleway, sans-serif; 
     --shadow:  0px 4px 4px rgba(0, 0, 0, 0.25);}
 
 body{
@@ -45,7 +43,6 @@ ul{
     float: right;
     flex-wrap: wrap;
     justify-content: space-around;}
-li{}
 .toolbar:hover{
     filter: brightness(1);
     background-color: rgba(255, 255, 255, 0.055);
@@ -64,7 +61,6 @@ li{}
 /* Meio */
 
 main {
-
     margin: auto;
     padding: 0;
 
