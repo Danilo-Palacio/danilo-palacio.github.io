@@ -44,8 +44,7 @@ ul{
     flex-direction: row;
     float: right;
     flex-wrap: wrap;
-    justify-content: space-around;
-}
+    justify-content: space-around;}
 li{}
 .toolbar:hover{
     filter: brightness(1);
@@ -172,8 +171,7 @@ footer{
     top: 0;
     width: 98vw;
     height: 13vh;
-    margin: auto;
-}
+    margin: auto;}
 
 .rodape{
     display: flex;
@@ -201,12 +199,10 @@ footer{
     border-radius: 14px;
 
     color: var(--secundaria);
-    text-decoration: none;
-}
+    text-decoration: none;}
 #button > img{
     margin: 0;
-    padding: 0;
-}
+    padding: 0;}
 #button > p{
     color: var(--secundaria);
     font-family: var(--raleway);
@@ -222,5 +218,4 @@ div > .baixarcv{
     font-weight: 500;
     display: flex;
     gap: 7px;
-    text-decoration: none;
-}
+    text-decoration: none;}
