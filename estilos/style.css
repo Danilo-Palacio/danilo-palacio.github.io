@@ -248,3 +248,19 @@ div > .baixarcv{
     display: flex;
     gap: 7px;
     text-decoration: none;}
+
+#portifolio{
+    position: relative;
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    top: 50px;
+    left: 1px;
+    border-style: solid;
+
+}
+#portifolio > div{
+    border-style: solid;
+    background-color: var(--secundaria);
+    border-radius: 10px;
+}
