@@ -214,10 +214,13 @@ footer{
     text-decoration: none;
     font-weight: 500;}
 
-div > h2{
+div > .baixarcv{
     color: var(--secundaria);
     font-family: var(--raleway);
     font-size: 1em;
     margin: 0px 15px 0px 0px;
     font-weight: 500;
+    display: flex;
+    gap: 7px;
+    text-decoration: none;
 }
