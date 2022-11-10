@@ -14,34 +14,43 @@
 
 body{
     background-color: var(--background);
-    width: 100vw;}
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;}
 
 /* Navegador */
-nav{
-    position: absolute;
-    width: 100vw;
-    height: 12vh;
+
+header{
+    position: relative;
+    width: 98vw;
+    height: 15vh;
     left: 0;
-    top: 65px;
-    transform: translate( 0%, -50%);}
+    top: 0px;
+    margin: auto;}
 ul{
-    background-color: var(--dark);
+    position: absolute;
+    width: 88%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+
+    background-color: var(--secundaria);
     box-shadow: var(--shadow);
     border-radius: 22px;
-    width: 88%;
+
+
     display: flex;
-    border-style: solid;
     flex-direction: row;
     float: right;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 10px 23px 1px 1px;}
-li{
-    display: flex;}
+}
+li{}
 .toolbar:hover{
     filter: brightness(1);
     background-color: rgba(255, 255, 255, 0.055);
-    font-weight: 800;}
+    font-weight: 700;}
 .toolbar{ 
     display: flex;
     color: var(--branco);
@@ -56,29 +65,38 @@ li{
 /* Meio */
 
 main {
-    font-family: var(--raleway);
 
-    display: inline-flex; 
+    margin: auto;
+    padding: 0;
+
+    position: relative;
+    width: 98vw;
+    height: 69vh;
+    left: 0vw;
+    top: 0vh;}
+.meio{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 99vw;
+    height: 69vh;
+
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-content: space-between;
+    align-items: center;
     flex-direction: row;
     row-gap: 59%;
-    
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    width: 100vw;
-    height: 62vh;
-    left: 0vw;
-    top: 20vh;}
+
+    font-family: var(--raleway);}
 
 section{
     position: relative;
     margin: 0;
-    height: 100%;}
+    height: 100%;
+    top: 1vh;}
 .sobre {
-    transform: translate(0, 20%);}
+    height: 37vh;}
 .sobre > h1{
     color: var(--secundaria);
     width: 10vw;
@@ -89,7 +107,7 @@ section{
     margin: 15px 0px;
     padding: 0px 0px;}
 .sobre > .saudacao{
-    background-color: var(--dark);
+    background-color: var(--secundaria);
     width: 120px;
     height: 20px;
     text-decoration: none;
@@ -129,13 +147,13 @@ section{
 .imagens > .css3{
     width: 30%;
     position: absolute;
-    left: 3%;
-    top: -6%;}
+    left: 4%;
+    top: 0%;}
 .imagens > .figma{
     width: 30%;
     position: absolute;
-    bottom: -9%;
-    right: 9%;}
+    bottom: -3%;
+    right: 13%;}
 .imagens > .html5{
     width: 30%;
     position: absolute;
@@ -144,50 +162,62 @@ section{
 .imagens > .photoshop{
     width: 30%;
     position: absolute;
-    top: -11%;
-    right: 12%;}
+    top: -7%;
+    right: 16%;}
 
 
 /* Rodapé */
 footer{
-    position: absolute;
-    bottom: 1%;
-    width: 99vw;
+    position: relative;
+    top: 0;
+    width: 98vw;
+    height: 13vh;
+    margin: auto;
 }
 
-div{
-
+.rodape{
     display: flex;
     flex-wrap: wrap;
+    align-content: center;
+    row-gap: 4px;
     justify-content: flex-end;
-    align-content: space-around;
 
     position: absolute;
-    width: 160px;
-    height: 60px;
+    height: 94%;
     right: 38px;
-    bottom: 1px;
-    transform: translate(0%, 0%);
-    
-}
-div > .button{
-    margin: 0px;
-    padding: 0%;
-    right: 0%;
-    width: 100%;
-    height: 31px;
+    top: 0;}
+.rodape > #button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 1px;
+    width: 71%;
+    height: 38%;
+
     border-style: solid;
+    border-width: 1px;
     border-radius: 14px;
 
-    font-family: var(--raleway);
-    font-size: 1em;
-    text-align: center;
+    color: var(--secundaria);
     text-decoration: none;
 }
-
-div > h2{
+#button > img{
+    margin: 0;
+    padding: 0;
+}
+#button > p{
+    color: var(--secundaria);
     font-family: var(--raleway);
     font-size: 1em;
-    margin: 0px;
-    padding: 0px;
+    text-decoration: none;
+    font-weight: 500;}
+
+div > h2{
+    color: var(--secundaria);
+    font-family: var(--raleway);
+    font-size: 1em;
+    margin: 0px 15px 0px 0px;
+    font-weight: 500;
 }

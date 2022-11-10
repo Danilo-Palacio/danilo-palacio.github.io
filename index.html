@@ -8,11 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <nav>
-                <ul>
-                    <li><a class="toolbar" href="#">Home</a></li>
+                <ul type="none">
+                    <li><a class="toolbar"  href="#">Home</a></li>
                     <li><a class="toolbar" href="#">Sobre Mim</a></li>
                     <li><a class="toolbar" href="#">Portifólio</a></li>
                     <li><a class="toolbar" href="#">Skills</a></li>
@@ -20,37 +18,36 @@
                     <li><a class="toolbar" href="#">Recomendações</a></li>
                     <li><a class="toolbar" href="#">Contato</a></li>
                 </ul>
-        </nav>
     </header>
 
     <main>
-        <section class="sobre">
-            <a class="saudacao" href="#">
-               <span class="mao">👋</span> <span>Salve!</span>
-            </a>
-            <h1>Danilo Palácio</h1>
-            <p >UI/UX design | Front end developer</p>
-
-            <aside class="redes" >
-                <a href="#"><img src="imagens/LinkeIn.svg" alt="LinkeIn"></a>
-                <a href="#"><img src="imagens/github.svg" alt="Git"></a>
-                <a href="#"><img src="imagens/behance.svg" alt="behance"></a>
-            </aside>
-        </section>
-        <section class="imagens">
-                <img src="imagens/Foto.png" alt="Danilo Vinicius" class="principal">
-                    <img src="imagens/AI.svg" alt="illustrator" class="illustrator">
-                    <img src="imagens/CSS3.svg" alt="css3" class="css3">
-                    <img src="imagens/FIGMA.svg" alt="figma" class="figma">
-                    <img src="imagens/HTML5.svg" alt="html5" class="html5">
-                    <img src="imagens/PS.svg" alt="photoshop" class="photoshop">
-     
-        </section>
+        <div class="meio">
+            <section class="sobre">
+                <a class="saudacao" href="#">
+                   <span class="mao">👋</span> <span>Salve!</span>
+                </a>
+                <h1>Danilo Palácio</h1>
+                <p >UI/UX design | Front end developer</p>
+                <aside class="redes" >
+                    <a href="#"><img src="imagens/LinkeIn.svg" alt="LinkeIn"></a>
+                    <a href="#"><img src="imagens/github.svg" alt="Git"></a>
+                    <a href="#"><img src="imagens/behance.svg" alt="behance"></a>
+                </aside>
+            </section>
+            <section class="imagens">
+                    <img src="imagens/Foto.png" alt="Danilo Vinicius" class="principal">
+                        <img src="imagens/AI.svg" alt="illustrator" class="illustrator">
+                        <img src="imagens/CSS3.svg" alt="css3" class="css3">
+                        <img src="imagens/FIGMA.svg" alt="figma" class="figma">
+                        <img src="imagens/HTML5.svg" alt="html5" class="html5">
+                        <img src="imagens/PS.svg" alt="photoshop" class="photoshop">
+            </section>
+        </div>
     </main>
     <footer>
-        <div>
-            <H2>Baixar CV</H2>
-            <a class="button" href="#">Vamos Conversar</a>
+        <div class="rodape">
+            <H2>Baixar CV <a href="#"><img src="imagens/ArrowLineDown.svg" alt="Baixar curriculo"></a></H2>
+            <a id="button" href="#"><img src="imagens/WhatsappLogo.svg" alt=""> <p>Vamos Conversar</p> </a>
         </div>
     </footer>
 
