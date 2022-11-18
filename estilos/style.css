@@ -249,18 +249,33 @@ div > .baixarcv{
     gap: 7px;
     text-decoration: none;}
 
-#portifolio{
-    position: relative;
-    width: 50vw;
-    height: 50vh;
-    display: flex;
-    top: 50px;
-    left: 1px;
-    border-style: solid;
 
+    /* Página portifolio */
+
+.pag-portifolio{
+    width: 98vw;
+    height: 100vh;
+    border: 1px solid red;
 }
+
 #portifolio > div{
     border-style: solid;
     background-color: var(--secundaria);
     border-radius: 10px;
+}
+
+.portifolio{
+    display: grid;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 30px;
+}
+.cards-portifolio{
+    width: 260px;
+    height: 260px;
+    border: 1px solid var(--dark);
+    border-radius: 15px;
+    text-align: center;
 }
