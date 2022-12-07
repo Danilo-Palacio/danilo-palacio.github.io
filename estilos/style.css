@@ -65,7 +65,8 @@ ul{
     text-decoration: none;}
 
 /* Meio */
-
+#viewport{
+}
 main {
     margin: auto;
     padding: 0;
@@ -75,7 +76,7 @@ main {
     height: 69vh;
     left: 0vw;
     top: 0vh;}
-.meio{
+#meio{
     position: absolute;
     top:0;
     left: 0;
@@ -128,6 +129,7 @@ section{
     color: var(--branco);
     font-weight: 600;}
 .sobre > .saudacao:hover >.mao{
+    transition: all 0.8s ease-in-out 0s;
     transform: rotate(45deg);}
 .sobre > .redes{
     width: 130px;
