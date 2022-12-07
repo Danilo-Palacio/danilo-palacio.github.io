@@ -14,8 +14,10 @@
 body{
     background-color: var(--background);
     width: 100vw;
+    height: 100vh;
     margin: 0px;
-    padding: 0px;}
+    padding: 0px;
+    box-sizing: border-box;}
 
 /* Navegador */
 
@@ -27,6 +29,7 @@ header{
     top: 0px;
     margin: auto;}
 ul{
+    
     position: absolute;
     width: 88%;
     top: 50%;
@@ -35,7 +38,7 @@ ul{
     margin: 0;
     padding: 0px 18px 0px 0px;
 
-    background-color: var(--secundaria);
+    background-color: var(--branco);
     box-shadow: var(--shadow);
     border-radius: 22px;
     
@@ -52,7 +55,7 @@ ul{
     font-weight: 700;}
 .toolbar{ 
     display: flex;
-    color: var(--branco);
+    color: var(--dark);
     font-family: var(--raleway);
     font-weight: bold;
     justify-content: space-between;
@@ -97,7 +100,7 @@ section{
     top: 1vh;}
 .sobre {
     height: 37vh;}
-.sobre > h1{
+.sobre h1{
     color: var(--secundaria);
     width: 10vw;
     display: block;
@@ -131,8 +134,6 @@ section{
     display: flex;
     justify-content: space-between;
     padding: 10px 10px;} 
-
-
 .imagens > .principal{
     position: relative;
     width: 76%;
@@ -168,8 +169,89 @@ section{
 .espaco{
     width: 10vw;
     height: 10vh;
-    margin: auto;
+    margin: auto;}
+
+
+/* Projetos */
+aside{
+    margin: 0px;
 }
+#projetos{
+    width: 98vw;
+    height: 97vh;
+    margin: 0px;
+
+    text-align: center;
+    font-family: var(--raleway);    
+}
+#projetos h1{
+    color: var(--secundaria);
+    width: 100vw;
+    font-weight: 700;
+    font-size: 3em;
+
+    margin: 0px 0px;
+    padding: 20px 0px;
+}
+#grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 34px 5px;
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: center;
+    margin: 6px 103px;
+    padding: 0px;
+    
+}
+
+
+.cards-portifolio{
+    transition: all 0.4s ease-in-out 0s;
+    background-color: white;
+    color: var(--dark);
+    width: 250px;
+    height: 310px;
+    border-radius: 15px;
+    text-align: left
+    ;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: var(--shadow);
+}
+
+.cards-portifolio:hover{
+    background-color: #001f54a4;
+    color: white;
+}
+.cards-portifolio:active{
+    transition: none;
+    box-shadow: none;
+    width: 245px;
+    height: 305px;
+}
+.informacao{
+    margin: 15px 20px;
+    padding: 0;
+}
+.informacao>h3,p{
+    margin: 0;
+    padding: 5px 0px;
+}
+.informacao>p{
+   font-size: 0.9em;
+}
+.screenshot{
+    background-color: var(--dark);
+    width: 80%;
+    height: 60%;
+    border-radius: 10px;
+}
+
+
 
 /* Rodapé */
 footer{
@@ -178,7 +260,6 @@ footer{
     width: 98vw;
     height: 13vh;
     margin: auto;}
-
 .rodape{
     display: flex;
     flex-wrap: wrap;
@@ -215,7 +296,6 @@ footer{
     font-size: 1em;
     text-decoration: none;
     font-weight: 500;}
-
 #informacao{
     position: relative;
     left: 5vw;
@@ -228,17 +308,13 @@ footer{
     border-radius: 10px;
     align-content: space-around;
     justify-content: center;
-    align-items: center;
-}
+    align-items: center;}
 #informacao > p{
     margin: 0px;
-    padding: 0px;
-}
+    padding: 0px;}
 #informacao > img{
     margin: 0px;
-    padding: 0px;
-
-}
+    padding: 0px;}
 div > .baixarcv{
     color: var(--secundaria);
     font-family: var(--raleway);
@@ -248,34 +324,3 @@ div > .baixarcv{
     display: flex;
     gap: 7px;
     text-decoration: none;}
-
-
-    /* Página portifolio */
-
-.pag-portifolio{
-    width: 98vw;
-    height: 100vh;
-    border: 1px solid red;
-}
-
-#portifolio > div{
-    border-style: solid;
-    background-color: var(--secundaria);
-    border-radius: 10px;
-}
-
-.portifolio{
-    display: grid;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    row-gap: 20px;
-    column-gap: 30px;
-}
-.cards-portifolio{
-    width: 260px;
-    height: 260px;
-    border: 1px solid var(--dark);
-    border-radius: 15px;
-    text-align: center;
-}
