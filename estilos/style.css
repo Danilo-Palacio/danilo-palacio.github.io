@@ -176,7 +176,7 @@ section{
     #manutencao{
         display: flex;
     background-color: var(--secundaria);
-    width: 15vw;
+    width: 17vw;
     height: 10vh;
     color: var(--branco);
     border-radius: 10px;
