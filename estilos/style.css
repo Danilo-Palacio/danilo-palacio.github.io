@@ -68,12 +68,12 @@ ul{
 #viewport{
 }
 main {
-    margin: auto;
+    
+    margin: 0px;
     padding: 0;
-
     position: relative;
     width: 98vw;
-    height: 69vh;
+    height: 80vh;
     left: 0vw;
     top: 0vh;}
 #meio{
@@ -173,14 +173,33 @@ section{
     height: 10vh;
     margin: auto;}
 
+    #manutencao{
+        display: flex;
+    background-color: var(--secundaria);
+    width: 15vw;
+    height: 10vh;
+    color: var(--branco);
+    border-radius: 10px;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 2px;
+    left: 38px;
+    }
+    #manutencao > p{
+    margin: 0px;
+    padding: 0px;}
+
+
+
 
 /* Projetos */
 aside{
     margin: 0px;
+    margin-top: 50px;
 }
 #projetos{
-    width: 98vw;
-    height: 97vh;
     margin: 0px;
 
     text-align: center;
@@ -223,6 +242,7 @@ aside{
     align-items: center;
 
     box-shadow: var(--shadow);
+    text-decoration: none;
 }
 
 .cards-portifolio:hover{
@@ -236,15 +256,18 @@ aside{
     height: 305px;
 }
 .informacao{
-    margin: 15px 20px;
+    margin: 9px 20px 1px 20px;
     padding: 0;
 }
 .informacao>h3,p{
     margin: 0;
     padding: 5px 0px;
+    text-decoration: none;
 }
 .informacao>p{
-   font-size: 0.9em;
+    font-size: 0.9em;
+    font-family: arial, sans-serif;
+    height: 53px;
 }
 .screenshot{
     background-color: var(--dark);
@@ -257,38 +280,32 @@ aside{
 
 /* Rodapé */
 footer{
-    position: relative;
-    top: 0;
-    width: 98vw;
-    height: 13vh;
-    margin: auto;}
+    display: block;
+    height: 81px;
+    margin: 25px 1px;
+    padding: 23px 1px;
+}
 .rodape{
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     row-gap: 4px;
-    justify-content: flex-end;
-
-    position: absolute;
-    height: 94%;
-    right: 38px;
-    top: 0;}
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;}
 .rodape > #button{
     display: flex;
     align-items: center;
     justify-content: center;
-
     margin: 0;
-    padding: 1px;
-    width: 71%;
-    height: 38%;
-
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 14px;
-
+    padding: 0px;
+    width: 200px;
+    height: 45px;
+    border-radius: 10px;
     color: var(--secundaria);
-    text-decoration: none;}
+    text-decoration: none;
+    background-color: var(--branco);
+    box-shadow: var(--shadow);}
 #button > img{
     margin: 0;
     padding: 0;}
@@ -298,25 +315,8 @@ footer{
     font-size: 1em;
     text-decoration: none;
     font-weight: 500;}
-#informacao{
-    position: relative;
-    left: 5vw;
-    bottom: 0vh;
-    display: flex;
-    background-color: var(--secundaria);
-    width: 14vw;
-    height: 7vh;
-    color: var(--branco);
-    border-radius: 10px;
-    align-content: space-around;
-    justify-content: center;
-    align-items: center;}
-#informacao > p{
-    margin: 0px;
-    padding: 0px;}
-#informacao > img{
-    margin: 0px;
-    padding: 0px;}
+
+
 div > .baixarcv{
     color: var(--secundaria);
     font-family: var(--raleway);
@@ -324,5 +324,59 @@ div > .baixarcv{
     margin: 0px 15px 0px 0px;
     font-weight: 500;
     display: flex;
-    gap: 7px;
-    text-decoration: none;}
+    gap: 9px;
+    text-decoration: none;
+    justify-content: center;}
+
+#up{
+    background-color: var(--branco);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+   display: flex;
+   align-items: center;
+   justify-content: center;}
+
+
+   /*Inclusão dos projetos*/
+   #projeto1{
+    background-image: url(../imagens/produto_preview.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+   }
+   #projeto2{
+    background-image: url(../imagens/maquina-de-memes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+   }
+   #projeto3{
+    background-image: url(../imagens/cordel-moderno.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+   }
+   #projeto4{
+    background-image: url(../imagens/projeto-social.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+   }
+   #projeto5{
+    background-image: url(../imagens/tela-login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+   }
+   #projetoembreve{
+    background-image: url(../imagens/embreve.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+   }
