@@ -128,9 +128,25 @@ section{
 .sobre > .saudacao> span{
     color: var(--branco);
     font-weight: 600;}
-.sobre > .saudacao:hover >.mao{
-    transition: all 0.8s ease-in-out 0s;
-    transform: rotate(45deg);}
+
+.sobre > .saudacao>.mao{
+    animation: hand-animation 2s ease infinite;
+    transform: rotate(45deg);
+}
+
+@keyframes hand-animation {
+   0% {transform: rotate(0deg);}
+    10% {transform: rotate(45deg);}
+    20% {transform: rotate(0deg);}
+    30% {transform: rotate(0deg);}
+    40% {transform: rotate(45deg);}
+    50% {transform: rotate(0deg);}
+    60% {transform: rotate(45deg);}
+    70% {transform: rotate(0deg);}
+    80% {transform: rotate(0deg);}
+    90% {transform: rotate(45deg);}
+    100% {transform: rotate(0deg);}}
+
 .sobre > .redes{
     width: 130px;
     display: flex;
@@ -138,35 +154,36 @@ section{
     padding: 10px 10px;} 
 .imagens > .principal{
     position: relative;
-    width: 76%;
+    width: 46%;
     top: 50%;
-    left: 10%;
-    transform: translate(0px, -50%);}
+    left: 23%;
+    transform: translate(0px, -50%);
+border-radius: 1000px 1000px;}
 .imagens > .illustrator{
     width: 30%;
     position: absolute;
-    right: 64%;
-    top: 64%;}
+    right: 61%;
+    top: 51%;}
 .imagens > .css3{
     width: 30%;
     position: absolute;
-    left: 4%;
-    top: 0%;}
+    left: 8%;
+    top: 4%;}
 .imagens > .figma{
     width: 30%;
     position: absolute;
-    bottom: -3%;
-    right: 13%;}
+    bottom: -15%;
+    right: 22%;}
 .imagens > .html5{
     width: 30%;
     position: absolute;
     top: 26%;
-    right: 0%;}
+    right: 13%;}
 .imagens > .photoshop{
     width: 30%;
     position: absolute;
-    top: -7%;
-    right: 16%;}
+    top: -15%;
+    right: 27%;}
 
 .espaco{
     width: 10vw;
