@@ -1,6 +1,7 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,800;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800;900&display=swap');
 
+/* Configurações */
 *{
     margin:0;
     padding: 0;
@@ -8,54 +9,300 @@
     font-family: var(--fontpadrao);
 
 }
+
+/* Variaveis */
 :root{
     --corclaro: #FFFBEB;
     --azulsecundario:#495579;
     --azulprimario:#263159;
     --azuldark: #251749;
 
-    --fontpadrao:'Raleway', sans-serif;;
+    --fontpadrao:'Raleway', sans-serif;
 
+    --shadow: 0px 8px 16px -8px rgba(0, 0, 0, 0.3);
+
+    --escala:scale(97%);
 }
 body{
     background-color: var(--corclaro);
+    display: flex;
+    flex-direction: column;
 }
-#menu{
+/* Navbar */
+#header{
+    height: 47px;
+}
+.navbar{
+    display: none;
+}
+#hamburguer{
+    color: var(--corclaro);
+    background-color: var(--azulprimario);
+    position: absolute;
+    width: 57px;
+    height: 57px;
+    right: 7%;
+    top: 47px;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: var(--shadow);
+}
+#hamburguer:hover{
+    background-color: var(--azuldark);
+    transform:var(--escala);
+}
+.material-symbols-outlined{
+      font-size: 40px;
+      text-align: center;
+      justify-content: center;
+      font-weight: 500;
+
+}
+
+
+/* Sessão Sobre */
+#sobre{
+    
+    width: 100vw;
+    height: 300px;
+
+}
+.sobre{
+    width: 225px;
+    height: 179px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+
+    
+    margin-left: 25px;
+}
+.sobre > .saudacao{  
+    width: 90px;  
+    height: 27px;
+
+    background-color: var(--azulprimario);
+    color: var(--corclaro);
+    text-decoration: none;
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-items: center;
+    
+    padding: 10px 20px;
+    column-gap: 5px;
 
-    color: var(--corclaro);
-    position: absolute;
-    top: 0px;
-    background-color: var(--azulprimario);
-    width: 100vw;
-    height: 108px;
-    font-family: var(--fontpadrao);
+    font-size: 11px;
+
+
 }
-ul{
+.sobre > .saudacao > .mao{
+    width: 11px;
+    animation: hand-animation 2s ease infinite;
+    transform: rotate(45deg);
+}
+@keyframes hand-animation {
+   0% {transform: rotate(0deg);}
+    10% {transform: rotate(45deg);}
+    20% {transform: rotate(0deg);}
+    30% {transform: rotate(0deg);}
+    40% {transform: rotate(45deg);}
+    50% {transform: rotate(0deg);}
+    60% {transform: rotate(45deg);}
+    70% {transform: rotate(0deg);}
+    80% {transform: rotate(0deg);}
+    90% {transform: rotate(45deg);}
+    100% {transform: rotate(0deg);}}
+.sobre > h1{
+    position: relative;
+    font-weight: 600;
+    font-size: 32pt;
+    line-height: 37px;
+    
+}
+.sobre > p{
+    font-size: 13pt;
+}
+.sobre > aside > a > img{
+    width: 40px;
+    height: 40px;
+    
+    
+}
+.sobre > aside > a > img:hover{
+    transform: var(--escala);
+}
+ .img_danilo_sobre{
     display: none;
 }
-#salve{
+/* Tecnologia */
+#tecnologia{
     background-color: var(--azulprimario);
+    
+    width: 100vw;
+    height: 152px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 22px 35px;
+
+    row-gap: 11px;
+
+}
+#tecnologia > img{
+    width: 112px;
+    height: 19px;
+}
+#tecnologia > h2 {
     color: var(--corclaro);
-    font-size: 2em;
-    text-align: center;
     font-weight: 500;
+    font-size: 24px;
+}
+#tecnologia > #icons {
+    display: flex;
+    width: 100vw;
 
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 11px;
+}
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+/* Sobre mim */
+#sobre-mim{
+    width: 100vw;
+    height: 477px;
+
 
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+#sobre-mim > .borda {
+    width: 344px;
+    height: 375px;
+    background-color: var(--azulprimario);
+    
+    border-radius: 16px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px 120px 180px;
+    padding: 15px 27px;
+
+    color: var(--corclaro);
+
+    box-shadow: var(--shadow);
+}
+.img_danilo{
+    grid-column: 1;
+    grid-row: span 2;
+    padding-right: 15px;
+}
+.btn_sobremim{
+    grid-column: 2;
+    padding-left: 15px;
+}
+.titulo_danilo{
+    grid-column: 2;
+    grid-row: 2;
+
+    font-size: 24px;
+    font-weight: 600;
+}
+.paragrafo_sobremim{
+
+    grid-column: span 2;
+    grid-row:3;
+
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 15px;
+
+    padding-top: 15px;
 
 }
+
+
+/* Trabalhos e Trajetória */
+#trabalhos, #trajetoria{
+    width: 100vw;
+    height: 100px;
+    background-color: var(--azulprimario);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    row-gap: 10px;
+}
+#trabalhos > h2, #trajetoria > h2{
+    color: var(--corclaro);
+    font-weight: 500;
+    font-size: 24px;
+}
+#sec-trabalhos, #sec-trajetoria{
+    width: 100vw;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
+
+    padding: 40px 0px;
+}
+#sec-trabalhos > .trabalho, #sec-trajetoria > .trajetoria {
+    width: 244px;
+    height: 156px;
+    background-color: var(--azulprimario);
+    border-radius: 15px;
+
+    box-shadow: var(--shadow);
+}
+
+
+/* Contatos */
+#contatos{
+    width: 100vw;
+    height: 144px;
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+#contatos > #info {
+    width: 150px;
+    color: var(--azuldark);
+
+}
+#contatos > #botoes {
+    width: 150px;
+}
+
+/* Voltar ao topo */
+
+#voltar {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+/* Footer */
 #footer{
     display: flex;
     flex-direction: row;
@@ -63,16 +310,25 @@ ul{
     justify-content: space-around;
 
     color: var(--corclaro);
-    position: absolute;
-    bottom: 0px;
     background-color: var(--azulprimario);
     width: 100vw;
     height: 108px;
     font-family: var(--fontpadrao);
+    font-size: 0.9em;
 }
-#footer >p{
-    padding: 20px;
+#footer > p{
+    padding-left: 15px;
+    width: 50%;
 }
-#footer >p>strong{
+#footer > p > strong{
     font-weight: 500;
+}
+#footer > .redes{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+#footer > .redes > .rede:hover{
+    transform: var(--escala);
 }

@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints
+-------------
+Pequenas Telas: até 600px
+Celular : de 600 até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes Telas: acima de 1200px
+*/
+
+
+/* Configurações */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontpadrao);
+
+}
+
+/* Variaveis */
+:root{
+    --corclaro: #FFFBEB;
+    --azulsecundario:#495579;
+    --azulprimario:#263159;
+    --azuldark: #251749;
+
+    --fontpadrao:'Raleway', sans-serif;
+
+    --shadow: 0px 8px 16px -8px rgba(0, 0, 0, 0.3);
+
+    --escala:scale(97%);
+}
+@media screen and (min-width: 768px) {
+/* Navbar */
+    #header{
+        height: 16vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+        #header > .navbar{
+            width: 90vw;
+            height: 88px;
+            background-color: var(--azulprimario);
+            border-radius: 30px;
+            color: var(--corclaro);
+
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .navbar > ul{
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            column-gap: 70px;
+
+            font-size: 22px;
+        }
+        #header > #hamburguer {
+            display: none;
+        }
+/* Sobre */
+    #sobre{
+        height: 82vh;
+
+        display: flex;
+        align-items: center;
+    }
+        .sobre{
+            width: 565px;
+            height: 334px;
+
+            display: flex;
+            flex-direction: column;
+            row-gap: 13px;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+
+            margin-left: 180px;
+
+            
+            color:var(--azuldark);
+        }
+        .sobre > .saudacao{  
+            width: 150px;  
+            height: 40px;
+            font-size: 20px;
+            column-gap: 25px;
+            
+        }
+        .sobre > .saudacao > .mao{
+            margin: -12px 0px 0px 11px;
+        }
+        .sobre > h1{
+            position: relative;
+            font-weight: 600;
+            font-size: 60px;
+            line-height: 75px;
+            color:var(--azuldark);
+            
+        }
+        .sobre > p{
+            font-size: 15pt;
+        }
+        .sobre > aside > a > img{
+            width: 50px;
+            height: 50px;
+            
+            
+        }
+        .img_danilo_sobre{
+            display: inline-block;
+        }
+/* Tecnologia */
+
+
+
+}
