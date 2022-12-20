@@ -105,9 +105,9 @@ body{
 
 }
 .sobre > .saudacao > .mao{
-    width: 11px;
     animation: hand-animation 2s ease infinite;
-    transform: rotate(45deg);
+    width: 20px;
+    height: 20px;
 }
 @keyframes hand-animation {
    0% {transform: rotate(0deg);}

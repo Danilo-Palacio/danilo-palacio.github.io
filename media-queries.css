@@ -101,11 +101,13 @@ Grandes Telas: acima de 1200px
             width: 150px;  
             height: 40px;
             font-size: 20px;
-            column-gap: 25px;
+            column-gap: 5px;
             
         }
         .sobre > .saudacao > .mao{
-            margin: -12px 0px 0px 11px;
+            margin: 5px 0px 0px -2px;
+            width: 39px;
+            height: 39px;
         }
         .sobre > h1{
             position: relative;
