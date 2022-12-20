@@ -4,34 +4,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Danilo Vinicius</title>
     <link rel="stylesheet" href="estilos/seg-style.css">
+    <link rel="stylesheet" href="media-queries.css">
 </head>
-<body>
-    <header id="menu">
-        <ul>
-            <li>Home</li>
-            <li>Tecnologias</li>
-            <li>Sobre mim</li>
-            <li>Trabalhos e projetos</li>
-            <li>Trajetória academica</li>
-            <li>contatos</li>
-        </ul>
-    </header>
-    <main>
-    <section id="salve">
-        <p>Desculpe, mas estamos em manutenção! </p>
-    </section>
-    <div>
 
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="navbar">
+            <ul>
+                <li><a href="#navbar">Home</a></li>
+                <li><a href="#tecnologia">Tecnologias</a></li>
+                <li><a href="#sobre-mim">Sobre mim</a></li>
+                <li><a href="#trabalhos">Trabalhos e projetos</a></li>
+                <li><a href="#trajetoria">Trajetória academica</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+        </div>
+        <div id="hamburguer">
+            <span class="material-symbols-outlined">
+                menu
+                </span>
+        </div>
+    </header>
+
+    <!-- Sobre -->
+    <section id="sobre">
+        <div class="sobre">
+            
+                    <div class="saudacao">
+                        <span class="mao">👋            </span>
+                        <p>Salve!</p>
+                    </div>
+            
+                    <h1>Danilo Palácio</h1>
+            
+                    <p >UI/UX design | Front end developer</p>
+            
+                    <aside class="redes_primary" >
+                        <a class="rede" href="https://www.linkedin.com/in/danilopalacio-ux-ui/" target="_blank"><img class="rede" src="imagens/LinkedIn_primari.svg" alt="LinkeIn"></a>
+                        <a class="rede" target="_blank" href="https://github.com/Danilo-Palacio"><img src="imagens/github.svg" alt="Git"></a>
+                        <a class="rede" href="https://www.behance.net/DaniloPalacio" target="_blank"><img src="imagens/behance.svg" alt="behance"></a>
+                    </aside>
+                   
+        </div>
+        <img class="img_danilo_sobre" src="imagens/img_danilo_desktop.svg" alt="Foto Danilo">
+
+    </section>
+
+    <!-- Tecnologias -->
+    <section id="tecnologia">
+        <div id="div_tecnologia">
+            <img src="imagens/btn-skills.svg" alt="btn-skills" class="icon_menu">
+            <h2>Ferramentas</h2>
+        </div>
+
+        <div id="icons">
+            <img src="imagens/icones/PS.svg" alt="icon-photoshop" class="icons">
+            <img src="imagens/icones/FIGMA.svg" alt="icon-figma" class="icons">
+            <img src="imagens/icones/AI.svg" alt="icon-illustrator" class="icons">
+            <img src="imagens/icones/CSS3.svg" alt="icon-css" class="icons">
+            <img src="imagens/icones/HTML5.svg" alt="icon-html" class="icons">
+            <img src="imagens/icones/JS.svg" alt="icon-javascript" class="icons">
+        </div>
+    </section>
+
+    <!-- Sobre mim -->
+    <section id="sobre-mim">
+        <div class="borda">
+            <img class="img_danilo" src="imagens/img_danilo.svg" alt="Foto Danilo">
+            <div class="titulo">
+                <img class="btn_sobremim" src="imagens/btn/btn_sobremin.svg" alt="icone sobre mim">
+                <p class="titulo_danilo">Danilo Vinicius Palacio da Silva</p>
+            </div>
+            <p class="paragrafo_sobremim">
+                👋 Me chamo Danilo Vinicius Palácio da Silva,  Prazer! <br><br>
+
+                👨‍💻 Há alguns meses iniciei meus estudos em Front-end e UX/UI design, e estou desenvolvendo e programando interfaces com JavaScript. <br><br>
+                
+                🎓 Finalizado curso de HTML5 e CSS3 pelo Curso em Vídeo, em processo com o curso de UX/UI Design pela EBAC e Javascript pela Alura .
+                <br><br>
+                
+                🚀 Tentando ser um pouquinho melhor do que ontem todos dias.
+            </p>
+        </div>
+    </section>
+
+    <!-- Trabalhos -->
+    <aside id="trabalhos">
+        <img src="imagens/btn/btn_potifolio.svg" alt="portifólio" class="icon_menu">
+        <h2>Trabalhos e Projetos</h2>
+
+    </aside>
+    <section id="sec-trabalhos">
+            <div class="trabalho"></div>
+            <div class="trabalho"></div>
+            <div class="trabalho"></div>
+            <div class="trabalho"></div>
+    </section>
+
+     <!-- Trajetória -->
+     <aside id="trajetoria">
+        <img src="imagens/btn/btn_potifolio.svg" alt="portifólio" class="icon_menu">
+        <h2>Trajetória acadêmica</h2>
+
+    </aside>
+    <section id="sec-trajetoria">
+            <div class="trajetoria"></div>
+            <div class="trajetoria"></div>
+            <div class="trajetoria"></div>
+            <div class="trajetoria"></div>
+    </section>
+
+    <!-- Contatos -->
+    <section id="contatos">
+        
+        <aside id="info">
+            <img src="imagens/btn/btn_contato.svg" alt="contatos">
+            <h2>Vamos conversar</h2>
+        </aside>
+        <aside id="botoes">
+            <img src="imagens/btn/btn_whatsapp.svg" alt="Whatsapp">
+            <div></div>
+            <img src="imagens/btn/btn_email.svg" alt="">
+        </aside>
+    </section>
+
+    <!-- Voltar ao topo -->
+    <div id="voltar">
+        <p><a href="#header">Voltar ao topo</a></p>
     </div>
-    </main>
+
+    <!-- Footer -->
     <footer id="footer">
         <p>Design and development by <strong>©Danilo Palácio</strong></p>
         <aside class="redes" >
-            <a href="https://www.linkedin.com/in/danilopalacio-ux-ui/" target="_blank"><img src="imagens/LinkeIn.svg" alt="LinkeIn"></a>
-            <a target="_blank" href="https://github.com/Danilo-Palacio"><img src="imagens/github.svg" alt="Git"></a>
-            <a href="https://www.behance.net/DaniloPalacio" target="_blank"><img src="imagens/behance.svg" alt="behance"></a>
+            <a class="rede" href="https://www.linkedin.com/in/danilopalacio-ux-ui/" target="_blank"><img src="imagens/LinkedIn_white.svg" alt="LinkeIn"></a>
+            <a class="rede" target="_blank" href="https://github.com/Danilo-Palacio"><img src="imagens/Github_white.svg" alt="Git"></a>
+            <a class="rede" href="https://www.behance.net/DaniloPalacio" target="_blank"><img src="imagens/behance_white.svg" alt="behance"></a>
         </aside>
     </footer>
 
