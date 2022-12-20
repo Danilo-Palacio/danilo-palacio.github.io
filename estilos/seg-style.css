@@ -297,10 +297,14 @@ body{
 
 }
 #sec-trabalhos .card-trabalho{
-    border: 2px solid var(--azuldark);
+    
+    background-color: var(--azuldark);
     width: 240px;
     height: 210px;
     border-radius: 5px;
+    color: var(--corclaro);
+    text-align: center;
+    line-height: 210px;
 
 }
 #sec-trabalhos .info-trabalho{
