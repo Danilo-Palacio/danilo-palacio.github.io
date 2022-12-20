@@ -15,12 +15,12 @@
     <header id="header">
         <div class="navbar">
             <ul>
-                <li>Home</li>
-                <li>Tecnologias</li>
-                <li>Sobre mim</li>
-                <li>Trabalhos e projetos</li>
-                <li>Trajetória academica</li>
-                <li>contatos</li>
+                <li><a href="#navbar">Home</a></li>
+                <li><a href="#tecnologia">Tecnologias</a></li>
+                <li><a href="#sobre-mim">Sobre mim</a></li>
+                <li><a href="#trabalhos">Trabalhos e projetos</a></li>
+                <li><a href="#trajetoria">Trajetória academica</a></li>
+                <li><a href="#contatos">Contatos</a></li>
             </ul>
         </div>
         <div id="hamburguer">
@@ -54,18 +54,20 @@
 
     </section>
 
-    <!-- Tecnologia -->
+    <!-- Tecnologias -->
     <section id="tecnologia">
-        <img src="imagens/btn-skills.svg" alt="btn-skills">
-        <h2>Tecnologia</h2>
+        <div id="div_tecnologia">
+            <img src="imagens/btn-skills.svg" alt="btn-skills" class="icon_menu">
+            <h2>Ferramentas</h2>
+        </div>
 
         <div id="icons">
-            <img src="imagens/icones/PS.svg" alt="icon-photoshop">
-            <img src="imagens/icones/FIGMA.svg" alt="icon-figma">
-            <img src="imagens/icones/AI.svg" alt="icon-illustrator">
-            <img src="imagens/icones/CSS3.svg" alt="icon-css">
-            <img src="imagens/icones/HTML5.svg" alt="icon-html">
-            <img src="imagens/icones/JS.svg" alt="icon-javascript">
+            <img src="imagens/icones/PS.svg" alt="icon-photoshop" class="icons">
+            <img src="imagens/icones/FIGMA.svg" alt="icon-figma" class="icons">
+            <img src="imagens/icones/AI.svg" alt="icon-illustrator" class="icons">
+            <img src="imagens/icones/CSS3.svg" alt="icon-css" class="icons">
+            <img src="imagens/icones/HTML5.svg" alt="icon-html" class="icons">
+            <img src="imagens/icones/JS.svg" alt="icon-javascript" class="icons">
         </div>
     </section>
 
@@ -73,8 +75,10 @@
     <section id="sobre-mim">
         <div class="borda">
             <img class="img_danilo" src="imagens/img_danilo.svg" alt="Foto Danilo">
-            <img class="btn_sobremim" src="imagens/btn/btn_sobremin.svg" alt="">
-            <h3 class="titulo_danilo">Danilo Vinicius Palacio da Silva</h3>
+            <div class="titulo">
+                <img class="btn_sobremim" src="imagens/btn/btn_sobremin.svg" alt="icone sobre mim">
+                <p class="titulo_danilo">Danilo Vinicius Palacio da Silva</p>
+            </div>
             <p class="paragrafo_sobremim">
                 👋 Me chamo Danilo Vinicius Palácio da Silva,  Prazer! <br><br>
 
@@ -90,7 +94,7 @@
 
     <!-- Trabalhos -->
     <aside id="trabalhos">
-        <img src="imagens/btn/btn_potifolio.svg" alt="portifólio">
+        <img src="imagens/btn/btn_potifolio.svg" alt="portifólio" class="icon_menu">
         <h2>Trabalhos e Projetos</h2>
 
     </aside>
@@ -103,7 +107,7 @@
 
      <!-- Trajetória -->
      <aside id="trajetoria">
-        <img src="imagens/btn/btn_potifolio.svg" alt="portifólio">
+        <img src="imagens/btn/btn_potifolio.svg" alt="portifólio" class="icon_menu">
         <h2>Trajetória acadêmica</h2>
 
     </aside>
@@ -123,13 +127,14 @@
         </aside>
         <aside id="botoes">
             <img src="imagens/btn/btn_whatsapp.svg" alt="Whatsapp">
+            <div></div>
             <img src="imagens/btn/btn_email.svg" alt="">
         </aside>
     </section>
 
     <!-- Voltar ao topo -->
     <div id="voltar">
-        <p>Voltar ao topo</p>
+        <p><a href="#header">Voltar ao topo</a></p>
     </div>
 
     <!-- Footer -->

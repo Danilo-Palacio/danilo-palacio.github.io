@@ -24,6 +24,7 @@
     --escala:scale(97%);
 }
 body{
+    width: 98vw;
     background-color: var(--corclaro);
     display: flex;
     flex-direction: column;
@@ -66,7 +67,7 @@ body{
 /* Sessão Sobre */
 #sobre{
     
-    width: 100vw;
+    width: 98.5vw;
     height: 300px;
 
 }
@@ -146,7 +147,7 @@ body{
 #tecnologia{
     background-color: var(--azulprimario);
     
-    width: 100vw;
+    width: 98.5vw;
     height: 152px;
 
     display: flex;
@@ -159,11 +160,16 @@ body{
     row-gap: 11px;
 
 }
-#tecnologia > img{
+#div_tecnologia{
+
+
+}
+#div_tecnologia > img{
     width: 112px;
     height: 19px;
 }
-#tecnologia > h2 {
+#div_tecnologia > h2 {
+    
     color: var(--corclaro);
     font-weight: 500;
     font-size: 24px;
@@ -180,7 +186,7 @@ body{
 
 /* Sobre mim */
 #sobre-mim{
-    width: 100vw;
+    width: 98.5vw;
     height: 477px;
 
 
@@ -189,6 +195,7 @@ body{
     justify-content: center;
 }
 #sobre-mim > .borda {
+
     width: 344px;
     height: 375px;
     background-color: var(--azulprimario);
@@ -214,6 +221,7 @@ body{
     padding-left: 15px;
 }
 .titulo_danilo{
+    
     grid-column: 2;
     grid-row: 2;
 
@@ -236,7 +244,7 @@ body{
 
 /* Trabalhos e Trajetória */
 #trabalhos, #trajetoria{
-    width: 100vw;
+    width: 98.5vw;
     height: 100px;
     background-color: var(--azulprimario);
     text-align: center;
@@ -254,7 +262,7 @@ body{
     font-size: 24px;
 }
 #sec-trabalhos, #sec-trajetoria{
-    width: 100vw;
+    width: 98.5vw;
     
     display: flex;
     flex-direction: column;
@@ -276,7 +284,7 @@ body{
 
 /* Contatos */
 #contatos{
-    width: 100vw;
+    width: 98.5vw;
     height: 144px;
 
 
@@ -301,6 +309,12 @@ body{
     text-align: center;
     padding: 10px 0px;
 }
+#voltar  a {
+    color: grey;
+    text-decoration: none;
+    font-weight: 400;
+}
+
 
 /* Footer */
 #footer{
@@ -311,7 +325,7 @@ body{
 
     color: var(--corclaro);
     background-color: var(--azulprimario);
-    width: 100vw;
+    width: 98.5vw;
     height: 108px;
     font-family: var(--fontpadrao);
     font-size: 0.9em;
