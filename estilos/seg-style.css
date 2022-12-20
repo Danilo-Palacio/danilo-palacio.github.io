@@ -269,14 +269,45 @@ body{
     padding: 40px 0px;
 }
 #sec-trabalhos > .trabalho, #sec-trajetoria > .trajetoria {
-    width: 244px;
-    height: 156px;
+    width: 300px;
+    height: 400px;
     background-color: var(--azulprimario);
     border-radius: 15px;
 
     box-shadow: var(--shadow);
-}
+    display: flex;
+    flex-direction:column;
+    align-items: center;
 
+}
+#sec-trabalhos > .trabalho >.card-info{
+    width: 240px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 12px;
+    row-gap: 21px;
+}
+#sec-trabalhos .titulo-trabalho{
+    font-size: 24px;
+    color: var(--corclaro);
+    align-self: center;
+
+}
+#sec-trabalhos .card-trabalho{
+    border: 2px solid var(--azuldark);
+    width: 240px;
+    height: 210px;
+    border-radius: 5px;
+
+}
+#sec-trabalhos .info-trabalho{
+    color: var(--corclaro);
+    font-size: 13px;
+    line-height: 15px;
+}
 
 /* Contatos */
 #contatos{
