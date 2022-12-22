@@ -279,7 +279,8 @@ body{
     width: 98.5vw;
     height: 100px;
     background-color: var(--azulprimario);
-    text-align: center;
+    text-align: center;    
+    
 
     display: flex;
     flex-direction: column;
@@ -292,6 +293,11 @@ body{
     color: var(--corclaro);
     font-weight: 500;
     font-size: 24px;
+    
+}
+.trabalho{
+    
+    text-decoration: none;
 }
 #sec-trabalhos, #sec-trajetoria{
     width: 98.5vw;
@@ -303,6 +309,7 @@ body{
     row-gap: 15px;
 
     padding: 40px 0px;
+    
 }
 #sec-trabalhos > .trabalho, #sec-trajetoria > .trajetoria {
     width: 300px;
@@ -332,10 +339,10 @@ body{
     align-self: center;
 
 }
-#sec-trabalhos .card-trabalho{
+#sec-trabalhos .card-trabalho > img{
     
     background-color: var(--azuldark);
-    width: 240px;
+    width: 210px;
     height: 210px;
     border-radius: 5px;
     color: var(--corclaro);
@@ -347,6 +354,11 @@ body{
     color: var(--corclaro);
     font-size: 13px;
     line-height: 15px;
+}
+#sec-trabalhos .dir-projeto{
+    color: grey;
+    font-size: 0.6em;
+    padding: 5px;
 }
 
 /* Contatos */

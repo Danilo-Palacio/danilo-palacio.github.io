@@ -202,6 +202,7 @@ Grandes Telas: acima de 1200px
 /* Trabalhos e Trajetória */
     #trabalhos, #trajetoria{
         height: 170px;
+        text-decoration: none;
     }
     #trabalhos > h2, #trajetoria > h2{
         color: var(--corclaro);
