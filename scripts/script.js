@@ -1,1 +1,0 @@
-document.alert("Olá Mundo!")
