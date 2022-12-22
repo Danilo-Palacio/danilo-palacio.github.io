@@ -155,6 +155,7 @@ body{
     90% {transform: rotate(45deg);}
     100% {transform: rotate(0deg);}}
 .sobre > h1{
+    color: var(--azuldark);
     position: relative;
     font-weight: 600;
     font-size: 32pt;
@@ -162,6 +163,8 @@ body{
     
 }
 .sobre > p{
+    
+    color: var(--azuldark);
     font-size: 13pt;
 }
 .sobre > aside > a > img{

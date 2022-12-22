@@ -1,6 +1,7 @@
 
     var itens = document.querySelector('.navbar')
-    var hamburguer = document.querySelector(".material-symbols-outlined")
+    var icone = document.querySelector(".material-symbols-outlined")
+    var hamburguer = document.querySelector('#hamburguer')
 
 function mudouTamanho(){
     if(window.innerWidth >= 768){
@@ -14,11 +15,15 @@ function openMenu(){
 
     if( itens.style.display == "flex"){
         itens.style.display = "none"
-        hamburguer.innerText = "menu"
+        icone.innerText = "menu"        
+        hamburguer.style.backgroundColor = "var(--azulprimario)"
+        hamburguer.style.boxShadow = "var(--escala)"
 
     }else{
         itens.style.display = 'flex'
-        hamburguer.innerText = "close"
+        icone.innerText = "close"
+        hamburguer.style.backgroundColor = "transparent"
+        hamburguer.style.boxShadow = "none"
     }
 
 }
