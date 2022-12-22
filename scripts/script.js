@@ -15,15 +15,11 @@ function openMenu(){
 
     if( itens.style.display == "flex"){
         itens.style.display = "none"
-        icone.innerText = "menu"        
-        hamburguer.style.backgroundColor = "var(--azulprimario)"
-        hamburguer.style.boxShadow = "var(--escala)"
+        icone.innerText = "menu"
 
     }else{
         itens.style.display = 'flex'
         icone.innerText = "close"
-        hamburguer.style.backgroundColor = "transparent"
-        hamburguer.style.boxShadow = "none"
     }
 
 }
