@@ -33,15 +33,47 @@ body{
 #header{
     height: 47px;
 }
+
 .navbar{
     display: none;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    top: 32.9%;
+    right: 6.7%;
+    transform: translate(0%, -50%);
+    
+    border: 2px solid var(--azulsecundario);
+    background-color: var(--azulprimario);
+    border-radius: 10px;
 }
+.navbar > .menu{
+            
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 32px;
+    font-size: 1.2em;
+    font-weight: 700;
+    list-style-type: none;
+}
+.navbar a {
+    text-decoration: none;
+    color: var(--corclaro);
+}
+.navbar a:hover{
+    color: var(--azulsecundario);
+}
+
 #hamburguer{
     color: var(--corclaro);
     background-color: var(--azulprimario);
     position: absolute;
-    width: 57px;
-    height: 57px;
+    width: 50px;
+    height: 50px;
     right: 7%;
     top: 47px;
     border-radius: 13px;
@@ -50,13 +82,14 @@ body{
     justify-content: center;
 
     box-shadow: var(--shadow);
+    cursor: pointer;
 }
 #hamburguer:hover{
     background-color: var(--azuldark);
     transform:var(--escala);
 }
 .material-symbols-outlined{
-      font-size: 40px;
+      font-size: 30px;
       text-align: center;
       justify-content: center;
       font-weight: 500;
@@ -333,6 +366,7 @@ body{
 #contatos > #botoes {
     width: 150px;
 }
+
 
 /* Voltar ao topo */
 

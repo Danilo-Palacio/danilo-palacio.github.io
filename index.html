@@ -5,16 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Danilo Vinicius</title>
     <link rel="stylesheet" href="estilos/seg-style.css">
     <link rel="stylesheet" href="estilos/media-queries.css">
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
     <!-- Header -->
     <header id="header">
+        
         <div class="navbar">
-            <ul>
+            <ul class="menu">
                 <li><a href="#navbar">Home</a></li>
                 <li><a href="#tecnologia">Tecnologias</a></li>
                 <li><a href="#sobre-mim">Sobre mim</a></li>
@@ -22,11 +24,13 @@
                 <li><a href="#trajetoria">Trajetória academica</a></li>
                 <li><a href="#contatos">Contatos</a></li>
             </ul>
+            
         </div>
-        <div id="hamburguer">
+        <div id="hamburguer" onclick="openMenu()">
             <span class="material-symbols-outlined">
                 menu
                 </span>
+        </div>
         </div>
     </header>
 
@@ -167,9 +171,9 @@
             <h2>Vamos conversar</h2>
         </aside>
         <aside id="botoes">
-            <img src="imagens/btn/btn_whatsapp.svg" alt="Whatsapp">
+            <a href="https://api.whatsapp.com/send/?phone=5511920034997&text&type=phone_number&app_absent=0"><img src="imagens/btn/btn_whatsapp.svg" alt="Whatsapp"></a>
             <div></div>
-            <img src="imagens/btn/btn_email.svg" alt="">
+            <img src="imagens/btn/btn_email.svg" alt="e-mail:danilo-palacio@hotmail.com">
         </aside>
     </section>
 

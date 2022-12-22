@@ -45,31 +45,17 @@ Grandes Telas: acima de 1200px
         #header > .navbar{
             width: 90vw;
             height: 70px;
-            background-color: var(--azulprimario);
-            border-radius: 10px;
-            color: var(--corclaro);
+            top: 70px;
 
             display: flex;
             align-items: center;
             justify-content: space-around;
+            border: none;
         }
-        .navbar > ul{
-            
-            display: flex;
+        .navbar > .menu{
             flex-direction: row;
             justify-content: center;
             column-gap: 70px;
-
-            font-size: 1.2em;
-            font-weight: 700;
-            list-style-type: none;
-        }
-        .navbar a {
-            text-decoration: none;
-            color: var(--corclaro);
-        }
-        .navbar a:hover{
-            color: var(--azulsecundario);
         }
 
         #header > #hamburguer {
@@ -289,6 +275,10 @@ Grandes Telas: acima de 1200px
         height: 100px;
     }
     #contatos > #botoes > img {
+        width: 240px;
+        height: 70px;
+    }
+    #contatos > #botoes > a > img {
         width: 240px;
         height: 70px;
     }
